@@ -5,7 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
+  <link rel="stylesheet" href="./assets/CSS/reset.css">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
+  <section class="container">
+     <h1 class="heading text-position">Register</h1>
+      <p class="text-position">Create your account.It's free and only takes a minute.</p>
+      <form class="form" action="">
+        <div class="wrapper">
+    <input 
+    type="text" 
+    placeholder="First Name" 
+    autofocus name="name" 
+    required pattern="^[a-z0-9_-]{3,15}$">
+    <input 
+    type="text" 
+    placeholder="Last Name" 
+    name=" last-name" 
+    required 
+    pattern="^[a-z0-9_-]{3,15}$">
+  </div>
+    <input 
+    type="email" 
+    placeholder="Email" 
+    name="email" 
+    required 
+    pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+    <input 
+    type="password" 
+    placeholder="Password" 
+    name="password" 
+    required 
+    pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+    <input 
+    type="password" 
+    placeholder="Confirm password" 
+    required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+    <label>
+    <input
+    type="checkbox" 
+    name="checkbox" 
+    required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+    <a href="http://" target="_blank" rel="noopener noreferrer">I accept the Terms of Use & Privacy Policy.</a> 
+    </label>
+    <input 
+    class="button text-position" 
+    type="submit" 
+    value="Register Now" 
+    required>
+      </form>
+  </section>
+  <div class="footer-link text-position">
+  <p>Already have an account? <a href="#">Sign in</a></p>
+  </div>
 </body>
 </html>
